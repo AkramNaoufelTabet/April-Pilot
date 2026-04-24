@@ -1,0 +1,225 @@
+{
+  "verified_at": "2026-04-16T11:01:38Z",
+  "passed": 12,
+  "failed": 0,
+  "resolved_models": {
+    "gpt-5.4": "openai/gpt-5.4",
+    "claude-opus-4.7": "anthropic/claude-opus-4.7",
+    "gemini-3.1-pro": "google/gemini-3.1-pro-preview",
+    "grok-4.20": "x-ai/grok-4.20",
+    "qwen3-max": "qwen/qwen3-max-thinking",
+    "deepseek-v3.2-speciale": "deepseek/deepseek-v3.2-speciale",
+    "kimi-k2.6": "moonshotai/kimi-k2.6",
+    "gemini-3-flash": "google/gemini-3-flash-preview",
+    "gemma-4-31b": "google/gemma-4-31b-it",
+    "glm-5.1": "z-ai/glm-5.1",
+    "gpt-oss-120b": "openai/gpt-oss-120b",
+    "mistral-large": "mistralai/mistral-large-2512"
+  },
+  "details": {
+    "gpt-5.4": {
+      "model_key": "gpt-5.4",
+      "model_type": "reasoning",
+      "resolved_model_id": "openai/gpt-5.4",
+      "candidates_tried": [
+        "openai/gpt-5.4"
+      ],
+      "status": "ok",
+      "http_code": 200,
+      "response_text": "ok",
+      "latency_seconds": 2.195,
+      "input_tokens": 18,
+      "output_tokens": 5,
+      "total_tokens": 23,
+      "cost_usd": null,
+      "finish_reason": "stop"
+    },
+    "claude-opus-4.6": {
+      "model_key": "claude-opus-4.6",
+      "model_type": "reasoning",
+      "resolved_model_id": "anthropic/claude-opus-4.6",
+      "candidates_tried": [
+        "anthropic/claude-opus-4.6"
+      ],
+      "status": "ok",
+      "http_code": 200,
+      "response_text": "ok",
+      "latency_seconds": 2.449,
+      "input_tokens": 20,
+      "output_tokens": 4,
+      "total_tokens": 24,
+      "cost_usd": null,
+      "finish_reason": "stop"
+    },
+    "gemini-3.1-pro": {
+      "model_key": "gemini-3.1-pro",
+      "model_type": "reasoning",
+      "resolved_model_id": "google/gemini-3.1-pro-preview",
+      "candidates_tried": [
+        "google/gemini-3.1-pro-preview"
+      ],
+      "status": "ok",
+      "http_code": 200,
+      "response_text": "ok",
+      "latency_seconds": 3.942,
+      "input_tokens": 12,
+      "output_tokens": 96,
+      "total_tokens": 108,
+      "cost_usd": null,
+      "finish_reason": "stop"
+    },
+    "grok-4.20": {
+      "model_key": "grok-4.20",
+      "model_type": "reasoning",
+      "resolved_model_id": "x-ai/grok-4.20",
+      "candidates_tried": [
+        "x-ai/grok-4.20"
+      ],
+      "status": "ok",
+      "http_code": 200,
+      "response_text": "ok",
+      "latency_seconds": 0.934,
+      "input_tokens": 134,
+      "output_tokens": 1,
+      "total_tokens": 135,
+      "cost_usd": null,
+      "finish_reason": "stop"
+    },
+    "qwen3-max": {
+      "model_key": "qwen3-max",
+      "model_type": "reasoning",
+      "resolved_model_id": "qwen/qwen3-max-thinking",
+      "candidates_tried": [
+        "qwen/qwen3-max-thinking"
+      ],
+      "status": "ok",
+      "http_code": 200,
+      "response_text": "ok",
+      "latency_seconds": 1.471,
+      "input_tokens": 20,
+      "output_tokens": 1,
+      "total_tokens": 21,
+      "cost_usd": null,
+      "finish_reason": "stop"
+    },
+    "deepseek-v3.2-speciale": {
+      "model_key": "deepseek-v3.2-speciale",
+      "model_type": "reasoning",
+      "resolved_model_id": "deepseek/deepseek-v3.2-speciale",
+      "candidates_tried": [
+        "deepseek/deepseek-v3.2-speciale"
+      ],
+      "status": "ok",
+      "http_code": 200,
+      "response_text": "ok",
+      "latency_seconds": 4.661,
+      "input_tokens": 22,
+      "output_tokens": 40,
+      "total_tokens": 62,
+      "cost_usd": null,
+      "finish_reason": "stop"
+    },
+    "kimi-k2": {
+      "model_key": "kimi-k2",
+      "model_type": "reasoning",
+      "resolved_model_id": "moonshotai/kimi-k2-thinking",
+      "candidates_tried": [
+        "moonshotai/kimi-k2-thinking"
+      ],
+      "status": "ok",
+      "http_code": 200,
+      "response_text": "ok",
+      "latency_seconds": 3.169,
+      "input_tokens": 19,
+      "output_tokens": 104,
+      "total_tokens": 123,
+      "cost_usd": null,
+      "finish_reason": "stop"
+    },
+    "gemini-3-flash": {
+      "model_key": "gemini-3-flash",
+      "model_type": "standard",
+      "resolved_model_id": "google/gemini-3-flash-preview",
+      "candidates_tried": [
+        "google/gemini-3-flash-preview"
+      ],
+      "status": "ok",
+      "http_code": 200,
+      "response_text": "ok",
+      "latency_seconds": 1.206,
+      "input_tokens": 12,
+      "output_tokens": 1,
+      "total_tokens": 13,
+      "cost_usd": null,
+      "finish_reason": "stop"
+    },
+    "gemma-4-31b": {
+      "model_key": "gemma-4-31b",
+      "model_type": "standard",
+      "resolved_model_id": "google/gemma-4-31b-it",
+      "candidates_tried": [
+        "google/gemma-4-31b-it"
+      ],
+      "status": "ok",
+      "http_code": 200,
+      "response_text": "ok",
+      "latency_seconds": 2.113,
+      "input_tokens": 25,
+      "output_tokens": 2,
+      "total_tokens": 27,
+      "cost_usd": null,
+      "finish_reason": "stop"
+    },
+    "glm-5.1": {
+      "model_key": "glm-5.1",
+      "model_type": "standard",
+      "resolved_model_id": "z-ai/glm-5.1",
+      "candidates_tried": [
+        "z-ai/glm-5.1"
+      ],
+      "status": "ok",
+      "http_code": 200,
+      "response_text": "ok",
+      "latency_seconds": 5.583,
+      "input_tokens": 17,
+      "output_tokens": 113,
+      "total_tokens": 130,
+      "cost_usd": null,
+      "finish_reason": "stop"
+    },
+    "gpt-oss-120b": {
+      "model_key": "gpt-oss-120b",
+      "model_type": "standard",
+      "resolved_model_id": "openai/gpt-oss-120b",
+      "candidates_tried": [
+        "openai/gpt-oss-120b"
+      ],
+      "status": "ok",
+      "http_code": 200,
+      "response_text": "ok",
+      "latency_seconds": 1.63,
+      "input_tokens": 79,
+      "output_tokens": 67,
+      "total_tokens": 146,
+      "cost_usd": null,
+      "finish_reason": "stop"
+    },
+    "mistral-large": {
+      "model_key": "mistral-large",
+      "model_type": "standard",
+      "resolved_model_id": "mistralai/mistral-large-2512",
+      "candidates_tried": [
+        "mistralai/mistral-large-2512"
+      ],
+      "status": "ok",
+      "http_code": 200,
+      "response_text": "ok",
+      "latency_seconds": 0.845,
+      "input_tokens": 15,
+      "output_tokens": 2,
+      "total_tokens": 17,
+      "cost_usd": null,
+      "finish_reason": "stop"
+    }
+  }
+}
