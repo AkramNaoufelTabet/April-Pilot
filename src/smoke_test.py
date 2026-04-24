@@ -56,7 +56,7 @@ VERBOSE_RESPONSE_MODELS = {"deepseek-v3.2-speciale", "kimi-k2.6"}
 
 N_QUESTIONS = 5
 MAX_TOKENS = 32768   # same for all models; reasoning models spend ~80% on chain-of-thought
-TIMEOUT = 300        # deepseek/kimi can take 3+ minutes
+TIMEOUT = 720        # deepseek can take 10+ min on hard questions
 
 
 # ── Prompt templates (closed-book) ─────────────────────────────────────────────
