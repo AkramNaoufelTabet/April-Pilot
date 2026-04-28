@@ -46,9 +46,11 @@ MODEL_TYPES = {
     "gemini-3.1-pro": "reasoning", "grok-4.20": "reasoning",
     "qwen3-max": "reasoning", "deepseek-v3.2-speciale": "reasoning",
     "kimi-k2.6": "reasoning",
+    # gpt-oss-120b always emits reasoning tokens regardless of the reasoning param;
+    # treating it as reasoning routes its CoT to the hidden field so content = clean answer
+    "gpt-oss-120b": "reasoning",
     "gemini-3-flash": "standard", "gemma-4-31b": "standard",
-    "glm-5.1": "standard", "gpt-oss-120b": "standard",
-    "mistral-large": "standard",
+    "glm-5.1": "standard", "mistral-large": "standard",
 }
 
 REASONING_MODEL_KEYS = {k for k, v in MODEL_TYPES.items() if v == "reasoning"}
@@ -121,9 +123,14 @@ PROMPT_LABELS = {
 # ── API call ───────────────────────────────────────────────────────────────────
 
 def extract_forecast(text: str) -> float | None:
-    match = re.search(r"Forecast:\s*([\d.]+)%", text, re.IGNORECASE)
+    # Accept "Forecast: X%" or "Forecast: X" (model omits % sign)
+    match = re.search(r"Forecast:\s*([\d.]+)(%?)", text, re.IGNORECASE)
     if match:
-        return round(min(max(float(match.group(1)) / 100, 0.0), 1.0), 4)
+        val = float(match.group(1))
+        # If no % sign and value looks like a probability (0-1), keep as-is; else divide by 100
+        if not match.group(2) and val <= 1.0:
+            return round(min(max(val, 0.0), 1.0), 4)
+        return round(min(max(val / 100, 0.0), 1.0), 4)
     return None
 
 
@@ -262,7 +269,8 @@ if __name__ == "__main__":
                         print(f"      [tail] {snippet}\n")
                     if not parse_ok:
                         parse_failures.append((model_key, prompt_key, q["question_id"]))
-                        print(f"      Response: {result['response'][:200]}")
+                        snippet = result['response'][:200].encode('ascii','replace').decode('ascii')
+                        print(f"      Response: {snippet}")
                 else:
                     brier = None
                     print(f"ERROR ({result['status']}: {result.get('error','')[:80]})")
