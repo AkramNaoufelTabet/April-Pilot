@@ -1,0 +1,7 @@
+prompt,condition,mean_brier,n_rows
+P1,closed_book,0.1732,1343
+P1,shared_evidence,0.1515,1345
+P2,closed_book,0.1741,1292
+P2,shared_evidence,0.1493,1336
+P3,closed_book,0.1899,1316
+P3,shared_evidence,0.1581,1324
