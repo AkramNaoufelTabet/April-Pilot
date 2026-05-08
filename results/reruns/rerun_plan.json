@@ -1,0 +1,1731 @@
+{
+  "description": "Rows requiring API re-runs. failure_class='truncation_likely': output near 32768 token limit, rerun with 65536 max_tokens and patched logger (raw_response cap raised). failure_class='empty_response': API returned nothing, rerun with same settings. failure_class='unknown_low_tokens': output well below limit, inspect before running.",
+  "total_reruns": 172,
+  "by_failure_class": {
+    "empty_response": 55,
+    "unknown_low_tokens": 107,
+    "truncation_likely": 10
+  },
+  "items": [
+    {
+      "model_key": "claude-opus-4.6",
+      "model_id": "anthropic/claude-opus-4.6",
+      "question_id": "5768",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "claude-opus-4.6",
+      "model_id": "anthropic/claude-opus-4.6",
+      "question_id": "0x62b0cd598091a179147acbd4616400f804acfdff6f76f029944b481b37cbd45f",
+      "prompt": "P2",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 1400,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "claude-opus-4.6",
+      "model_id": "anthropic/claude-opus-4.6",
+      "question_id": "lnIC5ggZh6",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "0x099952efaf314cb44fcc6179e1fd8ca309e473f7dd924e980a381b70648f2887",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 639,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "0x3bc785525e9bb8e8f2e64ed116ee8b8169abca30a2beaa1b366365f220dbb1e0",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "4919",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "RJH3aufks8LK0Pjyhrgl",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "0x7ffa1fcfaeac86d4a89afcb74c90296f0e7c3744ce5206183c9cb38651526e63",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 1211,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "4919",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 3042,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "0x8533de32e4bcfc22d1c8fe8d79be73b319505c2bc19733f62d2d217695df463d",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "truncation_likely",
+      "output_tokens_original": 32645,
+      "recommended_max_tokens": 65536
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "D38AIR8f03odzU8ZvoKr",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "40849",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 4744,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "0xad29cf2f3839f6090c3ba8a0b6753d3af77ecced5c24ab10348ecc64067c04a8",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "0x60279053b72e1e5299f66a6efd4f81663d0de5bedfc6bba41d6bbd0a9dbc9d1f",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "42139",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "0x62b0cd598091a179147acbd4616400f804acfdff6f76f029944b481b37cbd45f",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "39322",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "fXpDY62ibnxfUbqAaAEC",
+      "prompt": "P2",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "NhqOACq9Pu",
+      "prompt": "P2",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "38712",
+      "prompt": "P2",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "0x182b89f680380a2428daedda8d8fca19416569f8c3fcec997f00780f69f81f4c",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "40437",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "37115",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "0x2701e5a5b751418c5c5bf0faaafdea60ac9fc893eb75fd88e902cd97458d375b",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "40005",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "0x62b0cd598091a179147acbd4616400f804acfdff6f76f029944b481b37cbd45f",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "0xc8e9ba9e25f5adcf7e159e62c24ca3bda9a5245a049acb94fdd534e67ed1969e",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "17110",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemini-3.1-pro",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "question_id": "llC0sSgzg8",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "grok-4.20",
+      "model_id": "x-ai/grok-4.20",
+      "question_id": "0xc2846f35e85eb09a094edbd4e93e345d3c682dc0436615adc27122222fccbd81",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 487,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "grok-4.20",
+      "model_id": "x-ai/grok-4.20",
+      "question_id": "0x0a999ae98b3c9e593cbbd33e2f940df1b071ac0ab9ede42ed12eeb8f7eef461e",
+      "prompt": "P2",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 422,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "deepseek-v3.2-speciale",
+      "model_id": "deepseek/deepseek-v3.2-speciale",
+      "question_id": "1N2cnoqviIjoUdO3g5ke",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "truncation_likely",
+      "output_tokens_original": 32768,
+      "recommended_max_tokens": 65536
+    },
+    {
+      "model_key": "deepseek-v3.2-speciale",
+      "model_id": "deepseek/deepseek-v3.2-speciale",
+      "question_id": "RJH3aufks8LK0Pjyhrgl",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "deepseek-v3.2-speciale",
+      "model_id": "deepseek/deepseek-v3.2-speciale",
+      "question_id": "0x3b7e03065f6437f93e3aa6fc2cb4ac0af068d7c8b0ffb32e26296b078feaa507",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "deepseek-v3.2-speciale",
+      "model_id": "deepseek/deepseek-v3.2-speciale",
+      "question_id": "D5o5fIGpQnjANdl2DxdU",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "deepseek-v3.2-speciale",
+      "model_id": "deepseek/deepseek-v3.2-speciale",
+      "question_id": "0xad29cf2f3839f6090c3ba8a0b6753d3af77ecced5c24ab10348ecc64067c04a8",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "deepseek-v3.2-speciale",
+      "model_id": "deepseek/deepseek-v3.2-speciale",
+      "question_id": "17110",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "deepseek-v3.2-speciale",
+      "model_id": "deepseek/deepseek-v3.2-speciale",
+      "question_id": "0x62b0cd598091a179147acbd4616400f804acfdff6f76f029944b481b37cbd45f",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 2365,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "deepseek-v3.2-speciale",
+      "model_id": "deepseek/deepseek-v3.2-speciale",
+      "question_id": "0x54416d15d2428ec5fb1e6f2e646f0fd570f367be80d9dd285c479c8e9ce238a6",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "SZtPUQqhp5",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 1721,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "37115",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0x3b7e03065f6437f93e3aa6fc2cb4ac0af068d7c8b0ffb32e26296b078feaa507",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 2327,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0x0a999ae98b3c9e593cbbd33e2f940df1b071ac0ab9ede42ed12eeb8f7eef461e",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 6551,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0xf6890c707d1e327b006b9511bdba8c98ec4e4978646c6ffcf3ec8750c26a666a",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 10737,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0xc2846f35e85eb09a094edbd4e93e345d3c682dc0436615adc27122222fccbd81",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 2871,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "41205",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 12805,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0x850c1624dc9d8ca9850195df05293ff85273e6b92e89a9551cd0a57c2f72aceb",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "truncation_likely",
+      "output_tokens_original": 32768,
+      "recommended_max_tokens": 65536
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0x7f3c6b9029a1a4a932509c147a2cc0762e1116b7a4568cde472908b29dd4889d",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0xfb0c98ef42c5c48b5ecca31e555aa0565a31958261e2d6c7b4cb15bbd417cbba",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "7444",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 7834,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "41489",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "41370",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 17213,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "Q86zpNZRsU",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 3514,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "39002",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 7772,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "NhqOACq9Pu",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "15602",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 5786,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0x54416d15d2428ec5fb1e6f2e646f0fd570f367be80d9dd285c479c8e9ce238a6",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "40005",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 13048,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "5768",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 11153,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0xf18253f5c0b0ffc42172a435892bbcbdaab54119e874580148961e298dad6263",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 3923,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "tgT5NHOu7VA8sSAuAtJb",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 4662,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0x60279053b72e1e5299f66a6efd4f81663d0de5bedfc6bba41d6bbd0a9dbc9d1f",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0x7f3c6b9029a1a4a932509c147a2cc0762e1116b7a4568cde472908b29dd4889d",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "37115",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 5808,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "2gZEQtlQyO",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "40005",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 11010,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "39322",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 5218,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "39002",
+      "prompt": "P2",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0x8533de32e4bcfc22d1c8fe8d79be73b319505c2bc19733f62d2d217695df463d",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 790,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "42616",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 4752,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "C96pyn9Z5Z",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 11346,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0x3bfe92e518e3cc7f569b70cbafcf40449bd9498c7159129275c33822500457b5",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 6412,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0x2701e5a5b751418c5c5bf0faaafdea60ac9fc893eb75fd88e902cd97458d375b",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 4024,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "ln62Z8L0Sd",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 10503,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0x41da88e6d6db2ebf5fbb868d93e97c3052121a59d1222c00774119427ec9efe1",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 1806,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "kimi-k2.6",
+      "model_id": "moonshotai/kimi-k2.6",
+      "question_id": "0xad29cf2f3839f6090c3ba8a0b6753d3af77ecced5c24ab10348ecc64067c04a8",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 12099,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemma-4-31b",
+      "model_id": "google/gemma-4-31b-it",
+      "question_id": "12117",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemma-4-31b",
+      "model_id": "google/gemma-4-31b-it",
+      "question_id": "0x7f3c6b9029a1a4a932509c147a2cc0762e1116b7a4568cde472908b29dd4889d",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gemma-4-31b",
+      "model_id": "google/gemma-4-31b-it",
+      "question_id": "26328",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 290,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "42139",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "truncation_likely",
+      "output_tokens_original": 32768,
+      "recommended_max_tokens": 65536
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "5768",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "truncation_likely",
+      "output_tokens_original": 32768,
+      "recommended_max_tokens": 65536
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "IglOIIg2AI",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "truncation_likely",
+      "output_tokens_original": 32768,
+      "recommended_max_tokens": 65536
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "42139",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "truncation_likely",
+      "output_tokens_original": 32768,
+      "recommended_max_tokens": 65536
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "0x1bed9a7702b0855686f4f65a9f65d51afeb7ca0c60f48937f4377269087cec25",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "truncation_likely",
+      "output_tokens_original": 32768,
+      "recommended_max_tokens": 65536
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "24814",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "15602",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "D5o5fIGpQnjANdl2DxdU",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 4608,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "0xbffad14552b38c75d0047811d758c848202b520e153d5f124b694c6cadfaf7da",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 11625,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "40852",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "D5o5fIGpQnjANdl2DxdU",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 4138,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "39322",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 2567,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "0xf6890c707d1e327b006b9511bdba8c98ec4e4978646c6ffcf3ec8750c26a666a",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 19494,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "41343",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "0x58234757c9519ddfffdbc8f33bea3b172d5a55a7fedb07c6df4fed1e97ba1ca7",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 12744,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "0xcb139a61f2cc201078f5ed717781b7227b740645d07fec2a07d2d4bcd16ff8a7",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 10423,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "0x2701e5a5b751418c5c5bf0faaafdea60ac9fc893eb75fd88e902cd97458d375b",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "0xc2846f35e85eb09a094edbd4e93e345d3c682dc0436615adc27122222fccbd81",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "38712",
+      "prompt": "P2",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 14759,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "39322",
+      "prompt": "P2",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 2164,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "fXpDY62ibnxfUbqAaAEC",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 6318,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "0IUCA5s8EN",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "0x35915279267a71c7a89e07747e645107bd7720209a7ac145ab36af6c6ac35c67",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 283,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "36487",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "glm-5.1",
+      "model_id": "z-ai/glm-5.1",
+      "question_id": "6Zyd999ZP9",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 9709,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0xfb0c98ef42c5c48b5ecca31e555aa0565a31958261e2d6c7b4cb15bbd417cbba",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 766,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0IUCA5s8EN",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 988,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "C96pyn9Z5Z",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "truncation_likely",
+      "output_tokens_original": 29836,
+      "recommended_max_tokens": 65536
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x07c96dbd0f70e5a27a0e15c22042abcc57bc6acc7f740f7935e0a08cde5e5138",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 1640,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x3bfe92e518e3cc7f569b70cbafcf40449bd9498c7159129275c33822500457b5",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 2922,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x2e24ca91d308d503fa3711b0ff3b4c40e0d971e72bbc8012448c0ece02328a69",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "Q9gRdQ0Z9t",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 595,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "s4GyWK57MvM5wGvwPMhk",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 1477,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "lsO2IQ5LlE",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 583,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0xf6890c707d1e327b006b9511bdba8c98ec4e4978646c6ffcf3ec8750c26a666a",
+      "prompt": "P1",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 757,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "SZtPUQqhp5",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 2457,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "39002",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 1782,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0xcb139a61f2cc201078f5ed717781b7227b740645d07fec2a07d2d4bcd16ff8a7",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "truncation_likely",
+      "output_tokens_original": 32768,
+      "recommended_max_tokens": 65536
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "40849",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 6244,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "5768",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 8377,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x7ffa1fcfaeac86d4a89afcb74c90296f0e7c3744ce5206183c9cb38651526e63",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 503,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "6MyYH9TqA0FgSsx7Pare",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 4535,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "41343",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 4001,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "4919",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 5325,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "oj4g2w07uo",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 3834,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x53511c6b839a6f653f7b5b3e1e6b8e0f90b8b62a3a55731b47158f5057f8f23d",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 3374,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0xbffad14552b38c75d0047811d758c848202b520e153d5f124b694c6cadfaf7da",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 7318,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "Q9gRdQ0Z9t",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 5773,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "39002",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 4144,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x98737df66d3a7aceb83e22aca51672a56fda0f8d5677578d193fd6d4ce6bcaa2",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 5698,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "R2PYH7Cwjk59eILygi1W",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 3530,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0xcb139a61f2cc201078f5ed717781b7227b740645d07fec2a07d2d4bcd16ff8a7",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 13656,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x81fb3e948db1f5645556dbc01b96f50c319f1331ce8b745701197b8264c1d344",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 5357,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "40711",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "36487",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 4240,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "39322",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 7303,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0xf6890c707d1e327b006b9511bdba8c98ec4e4978646c6ffcf3ec8750c26a666a",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 3543,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0xc2846f35e85eb09a094edbd4e93e345d3c682dc0436615adc27122222fccbd81",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 7677,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x7ffa1fcfaeac86d4a89afcb74c90296f0e7c3744ce5206183c9cb38651526e63",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 5288,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "llC0sSgzg8",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 7544,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "10220",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 552,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x35915279267a71c7a89e07747e645107bd7720209a7ac145ab36af6c6ac35c67",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 1535,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "18541",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 3159,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x3bc785525e9bb8e8f2e64ed116ee8b8169abca30a2beaa1b366365f220dbb1e0",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 575,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x7f3c6b9029a1a4a932509c147a2cc0762e1116b7a4568cde472908b29dd4889d",
+      "prompt": "P2",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 3167,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "40437",
+      "prompt": "P2",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 2429,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "42139",
+      "prompt": "P2",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "35567",
+      "prompt": "P2",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 1736,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x60279053b72e1e5299f66a6efd4f81663d0de5bedfc6bba41d6bbd0a9dbc9d1f",
+      "prompt": "P2",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 1396,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "10220",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 3684,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "AaZr2KnQYHGRVHzvKoHa",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 2533,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "40437",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 3884,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "NstCUAzyt2",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": 0,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "42616",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 26197,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "41370",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 5727,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x2e24ca91d308d503fa3711b0ff3b4c40e0d971e72bbc8012448c0ece02328a69",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 4686,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "15602",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 3541,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "5768",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 899,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x41da88e6d6db2ebf5fbb868d93e97c3052121a59d1222c00774119427ec9efe1",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 8052,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "18541",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 5857,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x3bc785525e9bb8e8f2e64ed116ee8b8169abca30a2beaa1b366365f220dbb1e0",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 4176,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "39322",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0xc8e9ba9e25f5adcf7e159e62c24ca3bda9a5245a049acb94fdd534e67ed1969e",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "empty_response",
+      "output_tokens_original": null,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "lnIC5ggZh6",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 4238,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "0x60279053b72e1e5299f66a6efd4f81663d0de5bedfc6bba41d6bbd0a9dbc9d1f",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 5121,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "gpt-oss-120b",
+      "model_id": "openai/gpt-oss-120b",
+      "question_id": "llC0sSgzg8",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 946,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "mistral-large",
+      "model_id": "mistralai/mistral-large-2512",
+      "question_id": "39002",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 333,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "mistral-large",
+      "model_id": "mistralai/mistral-large-2512",
+      "question_id": "40875",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 395,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "qwen3-max",
+      "model_id": "qwen/qwen3-max-thinking",
+      "question_id": "0x2701e5a5b751418c5c5bf0faaafdea60ac9fc893eb75fd88e902cd97458d375b",
+      "prompt": "P2",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 274,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "qwen3-max",
+      "model_id": "qwen/qwen3-max-thinking",
+      "question_id": "0x2701e5a5b751418c5c5bf0faaafdea60ac9fc893eb75fd88e902cd97458d375b",
+      "prompt": "P3",
+      "condition": "closed_book",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 9706,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "qwen3-max",
+      "model_id": "qwen/qwen3-max-thinking",
+      "question_id": "0x2701e5a5b751418c5c5bf0faaafdea60ac9fc893eb75fd88e902cd97458d375b",
+      "prompt": "P1",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 1634,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "qwen3-max",
+      "model_id": "qwen/qwen3-max-thinking",
+      "question_id": "0x2701e5a5b751418c5c5bf0faaafdea60ac9fc893eb75fd88e902cd97458d375b",
+      "prompt": "P2",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 672,
+      "recommended_max_tokens": 32768
+    },
+    {
+      "model_key": "qwen3-max",
+      "model_id": "qwen/qwen3-max-thinking",
+      "question_id": "0x2701e5a5b751418c5c5bf0faaafdea60ac9fc893eb75fd88e902cd97458d375b",
+      "prompt": "P3",
+      "condition": "shared_evidence",
+      "failure_class": "unknown_low_tokens",
+      "output_tokens_original": 2307,
+      "recommended_max_tokens": 32768
+    }
+  ]
+}

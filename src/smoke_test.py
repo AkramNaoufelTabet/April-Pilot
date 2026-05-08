@@ -20,7 +20,7 @@ import requests
 
 ROOT = Path(__file__).parent.parent
 QUESTIONS_FILE = ROOT / "data" / "pilot_questions.json"
-OUT_FILE = ROOT / "results" / "smoke_test.json"
+OUT_FILE = ROOT / "results" / "raw" / "smoke_test.json"
 
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 

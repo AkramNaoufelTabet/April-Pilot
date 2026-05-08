@@ -33,7 +33,7 @@ import requests
 ROOT = Path(__file__).parent.parent
 QUESTIONS_FILE  = ROOT / "data" / "pilot_questions.json"
 CACHE_DIR       = ROOT / "data" / "evidence_cache"
-RESULTS_DIR     = ROOT / "results"
+RESULTS_DIR     = ROOT / "results" / "raw"
 SMOKE_OUT       = RESULTS_DIR / "preflight_smoke.json"
 
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")

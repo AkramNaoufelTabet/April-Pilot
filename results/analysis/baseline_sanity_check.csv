@@ -1,0 +1,11 @@
+question_id,source,question,topic,freeze_datetime,freeze_datetime_value,freeze_datetime_value_explanation,resolution_date,resolution_value,freeze_before_resolution
+t0LUU2E2ZE,manifold,Will the European Commission publish a new quantum strategy document within the next 60 days?,other,2026-02-19T00:00:00+00:00,0.6737514250226211,The market value.,2026-03-01,0,True
+IMLre6PYIQgsesV6Wa6O,manifold,Did the US enter a recession before the end of 2024?,economics,2025-10-30T00:00:00+00:00,0.013078717721741,The market value.,2025-11-09,0,True
+RJH3aufks8LK0Pjyhrgl,manifold,If Trump wins the election will the inflation rate in 2025 be below 2.5% (Current 2.5%)?,economics,2025-10-16T00:00:00+00:00,0.125868607120481,The market value.,2025-10-26,0,True
+Q9gRdQ0Z9t,manifold,Will the San Francisco 49ers win Super Bowl LX?,sports,2025-10-30T00:00:00+00:00,0.068899570541674,The market value.,2025-11-09,0,True
+0x07c96dbd0f70e5a27a0e15c22042abcc57bc6acc7f740f7935e0a08cde5e5138,polymarket,Will the U.S. collect between $500b and $1t in revenue in 2025?,economics,2025-10-16T00:00:00+00:00,0.002,The market price.,2025-10-26,0,True
+0x53511c6b839a6f653f7b5b3e1e6b8e0f90b8b62a3a55731b47158f5057f8f23d,polymarket,Will Moonshot have the best AI model at the end of November 2025?,ai_technology,2025-11-13T00:00:00+00:00,0.0015,The market price.,2025-11-23,0,True
+0xfb0c98ef42c5c48b5ecca31e555aa0565a31958261e2d6c7b4cb15bbd417cbba,polymarket,"Will Bitcoin dip to $90,000 by December 31, 2025?",finance_market,2025-10-30T00:00:00+00:00,0.25,The market price.,2025-11-09,1,True
+40875,metaculus,Will the number of manufacturing jobs in the US for February 2026 be above 12.7 million?,economics,2026-02-19T00:00:00+00:00,0.028,The community prediction.,2026-03-01,0,True
+40437,metaculus,Will Iran allow the IAEA to inspect its stockpile of enriched uranium before 2026?,geopolitics,2025-11-13T00:00:00+00:00,0.06,The community prediction.,2025-11-23,0,True
+26328,metaculus,Will there be any reported human-to-human transmission of highly pathogenic avian influenza H5N1 globally before 2026?,public_health,2025-11-13T00:00:00+00:00,0.01,The community prediction.,2025-11-23,0,True

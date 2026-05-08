@@ -1,0 +1,61 @@
+category,model_key,question_id,prompt,condition,forecast,resolution,brier,improvement,note
+worst_forecast,gpt-5.4,0x3b7e03065f6437f93e3aa6fc2cb4ac0af068d7c8b0ffb32e26296b078feaa507,P1,closed_book,0.0000,1.0,1.0000,,
+worst_forecast,gpt-5.4,40852,P1,shared_evidence,1.0000,0.0,1.0000,,
+worst_forecast,gpt-5.4,40852,P2,shared_evidence,1.0000,0.0,1.0000,,
+worst_forecast,gemini-3.1-pro,0xf74795c449ba15be6b0541c73beaa51d01d840606c84331ad97375b55004ccba,P1,closed_book,1.0000,0.0,1.0000,,
+worst_forecast,gemini-3.1-pro,0x3bc785525e9bb8e8f2e64ed116ee8b8169abca30a2beaa1b366365f220dbb1e0,P1,shared_evidence,1.0000,0.0,1.0000,,
+worst_forecast,deepseek-v3.2-speciale,40852,P1,shared_evidence,1.0000,0.0,1.0000,,
+worst_forecast,deepseek-v3.2-speciale,40852,P2,shared_evidence,1.0000,0.0,1.0000,,
+worst_forecast,deepseek-v3.2-speciale,0x3bc785525e9bb8e8f2e64ed116ee8b8169abca30a2beaa1b366365f220dbb1e0,P2,shared_evidence,1.0000,0.0,1.0000,,
+worst_forecast,deepseek-v3.2-speciale,40852,P3,shared_evidence,1.0000,0.0,1.0000,,
+worst_forecast,kimi-k2.6,0x7f3c6b9029a1a4a932509c147a2cc0762e1116b7a4568cde472908b29dd4889d,P1,shared_evidence,1.0000,0.0,1.0000,,
+top_improvement,gpt-oss-120b,Lc2SQtQQCg,P3,CB->SE,,,CB=1.0000 SE=0.0004,0.9996,
+top_improvement,gemini-3.1-pro,0xf74795c449ba15be6b0541c73beaa51d01d840606c84331ad97375b55004ccba,P1,CB->SE,,,CB=1.0000 SE=0.0025,0.9975,
+top_improvement,qwen3-max,llC0sSgzg8,P3,CB->SE,,,CB=0.9980 SE=0.0025,0.9955,
+top_improvement,qwen3-max,llC0sSgzg8,P2,CB->SE,,,CB=0.9940 SE=0.0025,0.9915,
+top_improvement,gpt-oss-120b,tgT5NHOu7VA8sSAuAtJb,P3,CB->SE,,,CB=1.0000 SE=0.0121,0.9879,
+top_improvement,gpt-oss-120b,cqcSp5ZC9h,P3,CB->SE,,,CB=1.0000 SE=0.0196,0.9804,
+top_improvement,gemini-3.1-pro,0xf74795c449ba15be6b0541c73beaa51d01d840606c84331ad97375b55004ccba,P3,CB->SE,,,CB=0.9801 SE=0.0001,0.9800,
+top_improvement,qwen3-max,AZNPqIQuA0,P1,CB->SE,,,CB=0.9801 SE=0.0001,0.9800,
+top_improvement,qwen3-max,llC0sSgzg8,P1,CB->SE,,,CB=0.9801 SE=0.0001,0.9800,
+top_improvement,qwen3-max,AZNPqIQuA0,P2,CB->SE,,,CB=0.9801 SE=0.0004,0.9797,
+overconf_YES_given_NO,gpt-5.4,4919,P2,closed_book,0.8900,0.0,0.7921,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,gpt-5.4,40852,P1,shared_evidence,1.0000,0.0,1.0000,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,gpt-5.4,26328,P1,shared_evidence,0.8200,0.0,0.6724,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,gpt-5.4,36487,P1,shared_evidence,0.9000,0.0,0.8100,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,gpt-5.4,0x3bc785525e9bb8e8f2e64ed116ee8b8169abca30a2beaa1b366365f220dbb1e0,P1,shared_evidence,0.9900,0.0,0.9801,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,gpt-5.4,4919,P2,shared_evidence,0.9400,0.0,0.8836,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,gpt-5.4,40852,P2,shared_evidence,1.0000,0.0,1.0000,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,gpt-5.4,36487,P2,shared_evidence,0.8300,0.0,0.6889,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,gpt-5.4,0x3bc785525e9bb8e8f2e64ed116ee8b8169abca30a2beaa1b366365f220dbb1e0,P2,shared_evidence,0.9900,0.0,0.9801,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,gpt-5.4,40852,P3,shared_evidence,0.9900,0.0,0.9801,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,gpt-5.4,36487,P3,shared_evidence,0.9700,0.0,0.9409,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,gpt-5.4,0x3bc785525e9bb8e8f2e64ed116ee8b8169abca30a2beaa1b366365f220dbb1e0,P3,shared_evidence,0.9900,0.0,0.9801,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,claude-opus-4.6,4919,P1,closed_book,0.9500,0.0,0.9025,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,claude-opus-4.6,40852,P1,closed_book,0.8200,0.0,0.6724,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,claude-opus-4.6,38712,P1,closed_book,0.8200,0.0,0.6724,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,claude-opus-4.6,35573,P1,closed_book,0.8200,0.0,0.6724,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,claude-opus-4.6,4919,P2,closed_book,0.9600,0.0,0.9216,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,claude-opus-4.6,20172,P2,closed_book,0.8500,0.0,0.7225,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,claude-opus-4.6,40852,P2,closed_book,0.9500,0.0,0.9025,,forecast>0.8 but outcome=0
+overconf_YES_given_NO,claude-opus-4.6,35573,P2,closed_book,0.8300,0.0,0.6889,,forecast>0.8 but outcome=0
+overconf_NO_given_YES,gpt-5.4,0x58234757c9519ddfffdbc8f33bea3b172d5a55a7fedb07c6df4fed1e97ba1ca7,P1,closed_book,0.0700,1.0,0.8649,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,0IUCA5s8EN,P1,closed_book,0.1400,1.0,0.7396,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,0x3b7e03065f6437f93e3aa6fc2cb4ac0af068d7c8b0ffb32e26296b078feaa507,P1,closed_book,0.0000,1.0,1.0000,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,42472,P1,closed_book,0.1800,1.0,0.6724,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,0xcb139a61f2cc201078f5ed717781b7227b740645d07fec2a07d2d4bcd16ff8a7,P1,closed_book,0.0600,1.0,0.8836,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,SZtPUQqhp5,P2,closed_book,0.1200,1.0,0.7744,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,0x58234757c9519ddfffdbc8f33bea3b172d5a55a7fedb07c6df4fed1e97ba1ca7,P2,closed_book,0.0800,1.0,0.8464,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,0IUCA5s8EN,P2,closed_book,0.1300,1.0,0.7569,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,0x3b7e03065f6437f93e3aa6fc2cb4ac0af068d7c8b0ffb32e26296b078feaa507,P2,closed_book,0.0100,1.0,0.9801,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,0xcb139a61f2cc201078f5ed717781b7227b740645d07fec2a07d2d4bcd16ff8a7,P2,closed_book,0.0400,1.0,0.9216,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,SZtPUQqhp5,P3,closed_book,0.1200,1.0,0.7744,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,0x58234757c9519ddfffdbc8f33bea3b172d5a55a7fedb07c6df4fed1e97ba1ca7,P3,closed_book,0.0300,1.0,0.9409,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,0IUCA5s8EN,P3,closed_book,0.1600,1.0,0.7056,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,0x3b7e03065f6437f93e3aa6fc2cb4ac0af068d7c8b0ffb32e26296b078feaa507,P3,closed_book,0.0030,1.0,0.9940,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,0xcb139a61f2cc201078f5ed717781b7227b740645d07fec2a07d2d4bcd16ff8a7,P3,closed_book,0.1500,1.0,0.7225,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,llC0sSgzg8,P3,closed_book,0.1200,1.0,0.7744,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,0x3b7e03065f6437f93e3aa6fc2cb4ac0af068d7c8b0ffb32e26296b078feaa507,P1,shared_evidence,0.1200,1.0,0.7744,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,0x3b7e03065f6437f93e3aa6fc2cb4ac0af068d7c8b0ffb32e26296b078feaa507,P2,shared_evidence,0.1200,1.0,0.7744,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,42472,P2,shared_evidence,0.1000,1.0,0.8100,,forecast<0.2 but outcome=1
+overconf_NO_given_YES,gpt-5.4,5768,P2,shared_evidence,0.1200,1.0,0.7744,,forecast<0.2 but outcome=1

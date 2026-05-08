@@ -45,8 +45,8 @@ import requests
 ROOT           = Path(__file__).parent.parent
 QUESTIONS_FILE = ROOT / "data" / "pilot_questions.json"
 CACHE_DIR      = ROOT / "data" / "evidence_cache"
-RESULTS_DIR    = ROOT / "results"
-MERGED_FILE    = RESULTS_DIR / "pilot_results.json"
+RESULTS_DIR    = ROOT / "results" / "raw"
+MERGED_FILE    = ROOT / "results" / "merged" / "pilot_results.json"
 
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 
