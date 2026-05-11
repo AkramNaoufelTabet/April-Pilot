@@ -1191,7 +1191,18 @@ p3_cb = mean(r["brier_score"] for r in p123v if r["prompt"]=="P3" and r["conditi
 p3_se = mean(r["brier_score"] for r in p123v if r["prompt"]=="P3" and r["condition"]=="shared_evidence")
 p1_cb = mean(r["brier_score"] for r in p123v if r["prompt"]=="P1" and r["condition"]=="closed_book")
 p1_se = mean(r["brier_score"] for r in p123v if r["prompt"]=="P1" and r["condition"]=="shared_evidence")
-best_cell = min(p123v, key=lambda r: r["brier_score"])
+# Best aggregate cell = lowest mean Brier for a (model, prompt, condition) triple
+from itertools import product as _product
+_agg_cells = []
+for _mk, _pk, _cond in _product(MODELS, PROMPTS + ["P4"], CONDITIONS):
+    _src = p4v if _pk == "P4" else p123v
+    _b, _n = cell_brier(_src, _mk, _pk, _cond)
+    if _b is not None and _n > 0:
+        _agg_cells.append((_b, _mk, _pk, _cond, _n))
+_agg_cells.sort()
+best_agg_cell_p123 = next(x for x in _agg_cells if x[2] != "P4")
+best_agg_cell_p4   = next(x for x in _agg_cells if x[2] == "P4")
+best_agg_cell_all  = _agg_cells[0]
 total_oc = len(oc_yes_all) + len(oc_no_all)
 best_model_p123 = lb_p123[0]
 worst_model_p123 = lb_p123[-1]
@@ -1202,11 +1213,12 @@ findings = [
     f"across all 12 models and 3 prompts. This effect is significant at p<0.001 "
     f"(cluster bootstrap, N=114 questions).",
 
-    f"**P3 (Bayesian) is brittle in closed-book.** P3 closed-book Brier = {f(p3_cb)} vs "
-    f"P1 closed-book = {f(p1_cb)} (delta = {f(p3_cb-p1_cb)}). P3 is the worst prompt "
-    f"in closed-book. In contrast, P3 with shared evidence ({f(p3_se)}) matches or "
-    f"beats P1+SE ({f(p1_se)}), suggesting Bayesian structure is useful when "
-    f"evidence is available but harmful without it.",
+    f"**P3 (Bayesian) is brittle in closed-book but shows the largest evidence gain.** "
+    f"P3 closed-book Brier = {f(p3_cb)} vs P1 closed-book = {f(p1_cb)}: P3 is the "
+    f"worst prompt without evidence. Under shared evidence P3 improves to {f(p3_se)}, "
+    f"its largest absolute gain of any prompt, yet it remains worse than P1+SE "
+    f"({f(p1_se)}) and P2+SE in absolute terms. The Bayesian structure amplifies "
+    f"evidence when available but degrades performance without it.",
 
     f"**P3 × evidence interaction is directional but not significant.** The "
     f"difference-in-differences (P3 gain vs P1 gain) = −0.011 (p≈0.08). "
@@ -1226,9 +1238,12 @@ findings = [
     f"(Brier = {f(worst_model_p123['mean_brier'])}). "
     f"Spread = {f(worst_model_p123['mean_brier']-best_model_p123['mean_brier'])} Brier points.",
 
-    f"**Best individual cell:** {best_cell['model_key']} / {best_cell['prompt']} / "
-    f"{best_cell['condition']} — "
-    f"Brier = {f(best_cell['brier_score'])}.",
+    f"**Best aggregate model–prompt–condition cell (P1–P3):** "
+    f"{best_agg_cell_p123[1]} / {best_agg_cell_p123[2]} / {best_agg_cell_p123[3]} "
+    f"(Brier = {f(best_agg_cell_p123[0])}, N={best_agg_cell_p123[4]}). "
+    f"Best P4 cell: {best_agg_cell_p4[1]} / P4 / {best_agg_cell_p4[3]} "
+    f"(Brier = {f(best_agg_cell_p4[0])}, N={best_agg_cell_p4[4]}, exploratory). "
+    f"Gemini 3.1 Pro's shared-evidence performance is one of the strongest single-cell results.",
 
     f"**No LLM beats the market baseline.** Market Brier = {f(mkt_overall_p123)}. "
     f"Best model gap: {best_model_p123['model_key']} is {f(model_vs_mkt[0]['delta'])} "

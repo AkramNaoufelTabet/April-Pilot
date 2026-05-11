@@ -535,7 +535,7 @@ Market baseline Brier (P4 rows): **0.0952**
 
 **Finding 1:** **Evidence universally improves LLM forecasting.** Shared evidence reduces mean Brier from 0.1797 (CB) to 0.1524 (SE), a delta of -0.0272 across all 12 models and 3 prompts. This effect is significant at p<0.001 (cluster bootstrap, N=114 questions).
 
-**Finding 2:** **P3 (Bayesian) is brittle in closed-book.** P3 closed-book Brier = 0.1897 vs P1 closed-book = 0.1740 (delta = 0.0157). P3 is the worst prompt in closed-book. In contrast, P3 with shared evidence (0.1569) matches or beats P1+SE (0.1518), suggesting Bayesian structure is useful when evidence is available but harmful without it.
+**Finding 2:** **P3 (Bayesian) is brittle in closed-book but shows the largest evidence gain.** P3 closed-book Brier = 0.1897 vs P1 closed-book = 0.1740: P3 is the worst prompt without evidence. Under shared evidence P3 improves to 0.1569, its largest absolute gain of any prompt, yet it remains worse than P1+SE (0.1518) and P2+SE in absolute terms. The Bayesian structure amplifies evidence when available but degrades performance without it.
 
 **Finding 3:** **P3 × evidence interaction is directional but not significant.** The difference-in-differences (P3 gain vs P1 gain) = −0.011 (p≈0.08). The pattern is consistent across most models but the pilot (N=114) is underpowered to confirm this interaction.
 
@@ -543,7 +543,7 @@ Market baseline Brier (P4 rows): **0.0952**
 
 **Finding 5:** **Best model overall: gpt-5.4** (Brier = 0.1367, BI = 63.02). Worst: mistral-large (Brier = 0.2155). Spread = 0.0787 Brier points.
 
-**Finding 6:** **Best individual cell:** gpt-5.4 / P1 / closed_book — Brier = 0.0000.
+**Finding 6:** **Best aggregate model–prompt–condition cell (P1–P3):** gemini-3.1-pro / P1 / shared_evidence (Brier = 0.1065, N=114). Best P4 cell: gpt-5.4 / P4 / shared_evidence (Brier = 0.1121, N=113, exploratory). Gemini 3.1 Pro's shared-evidence performance is one of the strongest single-cell results.
 
 **Finding 7:** **No LLM beats the market baseline.** Market Brier = 0.0949. Best model gap: gpt-5.4 is 0.0419 Brier points above market (p<0.001). The crowd-sourced market is a strong benchmark that current frontier LLMs cannot match.
 
