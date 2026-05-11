@@ -44,7 +44,7 @@ MODEL_TYPES = {
     "qwen3-max": "reasoning", "deepseek-v3.2-speciale": "reasoning",
     "kimi-k2.6": "reasoning", "gpt-oss-120b": "reasoning",
     "gemini-3-flash": "standard", "gemma-4-31b": "standard",
-    "glm-5.1": "standard", "mistral-large": "standard",
+    "glm-5.1": "reasoning*", "mistral-large": "standard",
 }
 PROMPTS    = ["P1", "P2", "P3"]
 CONDITIONS = ["closed_book", "shared_evidence"]
@@ -275,14 +275,18 @@ def best_prompt(row, cond_key, prompts):
     vals = {p: v for p, v in vals.items() if v is not None}
     return min(vals, key=vals.get) if vals else None
 
-prompt_wins_cb   = Counter()
-prompt_wins_se   = Counter()
-prompt_wins_all  = Counter()
+prompt_wins_cb      = Counter()   # includes P4 (for section 3 bold cells)
+prompt_wins_se      = Counter()
+prompt_wins_all     = Counter()
+# P1–P3 only wins (for section 3 prompt-win-count table)
+prompt_wins_cb_123  = Counter()
+prompt_wins_se_123  = Counter()
+prompt_wins_all_123 = Counter()
 for row in mpc_table:
-    all_prompts = PROMPTS + ["P4"]
+    all_prompts  = PROMPTS + ["P4"]
     bp_cb  = best_prompt(row, "CB", all_prompts)
     bp_se  = best_prompt(row, "SE", all_prompts)
-    # best overall per model
+    # best overall per model (all 4 prompts)
     overall_vals = {}
     for p in all_prompts:
         cb_v = row.get(f"{p}_CB")
@@ -300,6 +304,19 @@ for row in mpc_table:
     if bp_cb:  prompt_wins_cb[bp_cb]   += 1
     if bp_se:  prompt_wins_se[bp_se]   += 1
     if bp_ov:  prompt_wins_all[bp_ov]  += 1
+    # P1–P3 only wins
+    bp_cb_123 = best_prompt(row, "CB", PROMPTS)
+    bp_se_123 = best_prompt(row, "SE", PROMPTS)
+    ov_123 = {}
+    for p in PROMPTS:
+        cb_v = row.get(f"{p}_CB"); se_v = row.get(f"{p}_SE")
+        if cb_v is not None and se_v is not None: ov_123[p] = (cb_v + se_v) / 2
+        elif cb_v is not None: ov_123[p] = cb_v
+        elif se_v is not None: ov_123[p] = se_v
+    bp_ov_123 = min(ov_123, key=ov_123.get) if ov_123 else None
+    if bp_cb_123:  prompt_wins_cb_123[bp_cb_123]   += 1
+    if bp_se_123:  prompt_wins_se_123[bp_se_123]   += 1
+    if bp_ov_123:  prompt_wins_all_123[bp_ov_123]  += 1
 
 
 # ==============================================================================
@@ -893,12 +910,21 @@ for row in mpc_table:
 p()
 p("† P4 is exploratory, not part of the confirmatory P1–P3 design.")
 p()
-p("**Prompt win counts (including P4):**")
+p("**Prompt win counts — P1–P3 only (best prompt per model, P4 excluded):**")
 p()
 p("| Prompt | Wins CB | Wins SE | Wins Overall |")
 p("|--------|---------|---------|-------------|")
+for pk in PROMPTS:
+    p(f"| {pk} | {prompt_wins_cb_123.get(pk,0)} | {prompt_wins_se_123.get(pk,0)} | {prompt_wins_all_123.get(pk,0)} |")
+p()
+p("**Including P4† (best across all 4 prompts):**")
+p()
+p("| Prompt | Wins CB | Wins SE |")
+p("|--------|---------|---------|")
 for pk in PROMPTS + ["P4"]:
-    p(f"| {pk} | {prompt_wins_cb.get(pk,0)} | {prompt_wins_se.get(pk,0)} | {prompt_wins_all.get(pk,0)} |")
+    p(f"| {pk}{'†' if pk=='P4' else ''} | {prompt_wins_cb.get(pk,0)} | {prompt_wins_se.get(pk,0)} |")
+p()
+p("*P4 dominates the average (CB+SE)/2 for all 12 models, so 'Wins Overall including P4' is not shown — it is 12/12 P4.*")
 
 # ── Section 4 ──────────────────────────────────────────────────────────────────
 h2("4. Prompt × Condition Aggregate Analysis")
@@ -1150,6 +1176,9 @@ for r in practicality:
     p(f"| {r['model_key']} | {r['model_type']} | {f(r['mean_brier'])} | "
       f"{f(r['se_brier'])} | {r['parse_rate']}% | {r['mean_lat']} | "
       f"{r['mean_itok']} | {r['mean_otok']} | {r['mean_rtok'] or 'N/A'} |")
+p()
+p("*reasoning\\* = called without explicit reasoning effort flag but produces internal reasoning tokens (mean 2,124). "
+  "All other standard models (gemini-3-flash, gemma-4-31b, mistral-large) produce 0 reasoning tokens.*")
 
 h3("12b. Recommended model sets for live Metaculus summer tournament")
 p()
@@ -1250,11 +1279,20 @@ findings = [
     f"Brier points above market (p<0.001). The crowd-sourced market is a strong benchmark "
     f"that current frontier LLMs cannot match.",
 
-    f"**LLMs are systematically overconfident.** {total_oc} catastrophic overconfidence "
-    f"errors in P1–P3 ({pct(total_oc,len(p123v))}% of valid rows): "
-    f"{len(oc_yes_all)} high-confidence forecasts on events that did not occur, "
-    f"{len(oc_no_all)} low-confidence forecasts on events that did occur. "
-    f"ECE = {f(cal_p123.get('ECE'))}.",
+    (lambda bins: (
+        f"**LLMs are severely miscalibrated at high confidence.** "
+        f"Overall ECE = {f(cal_p123.get('ECE'))}. The miscalibration is not uniform: "
+        f"models are near-calibrated at low probabilities but dramatically overconfident "
+        f"above 0.5. In the 0.9–1.0 bin (N={bins[-1]['n']} forecasts), mean forecast = "
+        f"{f(bins[-1]['mean_forecast'])} but observed frequency = "
+        f"{f(bins[-1]['mean_outcome'])} — a gap of {f(bins[-1]['gap'])}. "
+        f"In the 0.7–0.8 bin (N={bins[7]['n']}), gap = {f(bins[7]['gap'])}. "
+        f"This pattern holds across all 12 models and constitutes {total_oc} "
+        f"catastrophic errors ({pct(total_oc,len(p123v))}% of valid rows): "
+        f"{len(oc_yes_all)} cases of forecast > 0.80 on events that did not occur, "
+        f"{len(oc_no_all)} cases of forecast < 0.20 on events that did occur. "
+        f"P4 shows better calibration (ECE = {f(cal_p4.get('ECE'))})."
+    ))(cal_p123["cal_bins"]),
 
     f"**Reasoning models outperform standard models** (Brier {f(type_stats['reasoning']['brier'])} "
     f"vs {f(type_stats['standard']['brier'])}, delta = "

@@ -6,7 +6,7 @@ claude-opus-4.6,reasoning,0.1518,0.1611,P1,-0.0093,True,0.1349,0.1232,P2,0.0117,
 grok-4.20,reasoning,0.1708,0.1764,P2,-0.0056,True,0.1335,0.1375,P3,-0.0039,True
 deepseek-v3.2-speciale,reasoning,0.1643,0.1658,P2,-0.0015,True,0.1306,0.1447,P1,-0.0141,True
 gpt-oss-120b,reasoning,0.1576,0.1637,P2,-0.0061,True,0.1360,0.1504,P1,-0.0144,True
-glm-5.1,standard,0.1670,0.1802,P1,-0.0132,True,0.1699,0.1521,P2,0.0178,False
+glm-5.1,reasoning*,0.1670,0.1802,P1,-0.0132,True,0.1699,0.1521,P2,0.0178,False
 qwen3-max,reasoning,0.1913,0.1860,P2,0.0053,False,0.1558,0.1468,P1,0.0089,False
 gemma-4-31b,standard,0.1807,0.1748,P1,0.0059,False,0.1479,0.1620,P2,-0.0141,True
 gemini-3-flash,standard,0.1772,0.1855,P2,-0.0084,True,0.1528,0.1666,P1,-0.0138,True

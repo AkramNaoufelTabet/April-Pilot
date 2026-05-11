@@ -30,6 +30,6 @@ calibration_p123,mean_forecast,0.2849
 calibration_p123,overconf_total,724
 calibration_p4,ECE,0.0637
 type_comparison,reasoning_brier,0.1558
-type_comparison,standard_brier,0.1865
+type_comparison,standard_brier,0.1909
 type_comparison,reasoning_mean_lat,118.4
-type_comparison,standard_mean_lat,34.7
+type_comparison,standard_mean_lat,20.7

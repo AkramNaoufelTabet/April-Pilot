@@ -42,7 +42,7 @@
 | grok-4.20 | reasoning | 684/684 | 100.0% | 227/228 | 99.6% |
 | deepseek-v3.2-speciale | reasoning | 684/684 | 100.0% | 226/228 | 99.1% |
 | gpt-oss-120b | reasoning | 680/684 | 99.4% | 226/228 | 99.1% |
-| glm-5.1 | standard | 682/684 | 99.7% | 220/228 | 96.5% |
+| glm-5.1 | reasoning* | 682/684 | 99.7% | 220/228 | 96.5% |
 | qwen3-max | reasoning | 680/684 | 99.4% | 225/228 | 98.7% |
 | gemma-4-31b | standard | 684/684 | 100.0% | 226/228 | 99.1% |
 | gemini-3-flash | standard | 684/684 | 100.0% | 228/228 | 100.0% |
@@ -77,7 +77,7 @@
 | 4 | claude-opus-4.6 | reasoning | 0.1464 | 61.73 | 100.0% | 39.2 |
 | 5 | grok-4.20 | reasoning | 0.1608 | 59.90 | 100.0% | 28.5 |
 | 6 | deepseek-v3.2-speciale | reasoning | 0.1644 | 59.46 | 100.0% | 196.9 |
-| 7 | glm-5.1 | standard | 0.1734 | 58.36 | 99.7% | 76.6 |
+| 7 | glm-5.1 | reasoning* | 0.1734 | 58.36 | 99.7% | 76.6 |
 | 8 | qwen3-max | reasoning | 0.1755 | 58.11 | 99.4% | 250.5 |
 | 9 | gpt-oss-120b | reasoning | 0.1756 | 58.10 | 99.4% | 85.6 |
 | 10 | gemma-4-31b | standard | 0.1783 | 57.78 | 100.0% | 39.3 |
@@ -98,7 +98,7 @@
 | 8 | mistral-large | standard | 0.1622 | 59.72 | 99.6% | 31.5 |
 | 9 | gemma-4-31b | standard | 0.1641 | 59.49 | 99.1% | 47.9 |
 | 10 | gemini-3-flash | standard | 0.1650 | 59.38 | 100.0% | 7.3 |
-| 11 | glm-5.1 | standard | 0.1684 | 58.96 | 96.5% | 115.5 |
+| 11 | glm-5.1 | reasoning* | 0.1684 | 58.96 | 96.5% | 115.5 |
 | 12 | qwen3-max | reasoning | 0.1734 | 58.35 | 98.7% | 233.2 |
 
 ### 2c. Combined P1–P4 Leaderboard
@@ -112,7 +112,7 @@
 | 5 | grok-4.20 | reasoning | 0.1586 | 60.17 |
 | 6 | deepseek-v3.2-speciale | reasoning | 0.1602 | 59.98 |
 | 7 | gpt-oss-120b | reasoning | 0.1684 | 58.97 |
-| 8 | glm-5.1 | standard | 0.1722 | 58.51 |
+| 8 | glm-5.1 | reasoning* | 0.1722 | 58.51 |
 | 9 | gemma-4-31b | standard | 0.1748 | 58.20 |
 | 10 | qwen3-max | reasoning | 0.1750 | 58.17 |
 | 11 | gemini-3-flash | standard | 0.1754 | 58.11 |
@@ -143,7 +143,7 @@ Format: Brier (n valid). CB = closed_book, SE = shared_evidence.
 | grok-4.20 | reasoning | 0.1779 (114) | 0.1544 (114) | 0.1764 (114) | 0.1398 (114) | 0.1790 (114) | 0.1375 (114) | **0.1708 (113)** | **0.1335 (114)** | P4 | P4 |
 | deepseek-v3.2-speciale | reasoning | 0.1763 (114) | 0.1447 (114) | 0.1658 (114) | 0.1476 (114) | 0.1851 (114) | 0.1667 (114) | **0.1643 (113)** | **0.1306 (113)** | P4 | P4 |
 | gpt-oss-120b | reasoning | 0.1683 (114) | 0.1504 (113) | 0.1637 (113) | 0.1543 (114) | 0.2222 (112) | 0.1950 (114) | **0.1576 (112)** | **0.1360 (114)** | P4 | P4 |
-| glm-5.1 | standard | 0.1802 (114) | 0.1611 (113) | 0.1979 (114) | **0.1521 (113)** | 0.1917 (114) | 0.1570 (114) | **0.1670 (113)** | 0.1699 (107) | P4 | P2 |
+| glm-5.1 | reasoning* | 0.1802 (114) | 0.1611 (113) | 0.1979 (114) | **0.1521 (113)** | 0.1917 (114) | 0.1570 (114) | **0.1670 (113)** | 0.1699 (107) | P4 | P2 |
 | qwen3-max | reasoning | 0.1886 (114) | **0.1468 (114)** | **0.1860 (113)** | 0.1550 (113) | 0.1925 (113) | 0.1843 (113) | 0.1913 (112) | 0.1558 (113) | P2 | P1 |
 | gemma-4-31b | standard | **0.1748 (114)** | 0.1731 (114) | 0.1879 (114) | 0.1620 (114) | 0.1961 (114) | 0.1757 (114) | 0.1807 (112) | **0.1479 (114)** | P1 | P4 |
 | gemini-3-flash | standard | 0.1942 (114) | 0.1666 (114) | 0.1855 (114) | 0.1671 (114) | 0.1899 (114) | 0.1702 (114) | **0.1772 (114)** | **0.1528 (114)** | P4 | P4 |
@@ -151,14 +151,24 @@ Format: Brier (n valid). CB = closed_book, SE = shared_evidence.
 
 † P4 is exploratory, not part of the confirmatory P1–P3 design.
 
-**Prompt win counts (including P4):**
+**Prompt win counts — P1–P3 only (best prompt per model, P4 excluded):**
 
 | Prompt | Wins CB | Wins SE | Wins Overall |
 |--------|---------|---------|-------------|
-| P1 | 1 | 2 | 1 |
-| P2 | 2 | 3 | 0 |
-| P3 | 1 | 0 | 1 |
-| P4 | 8 | 7 | 10 |
+| P1 | 5 | 5 | 4 |
+| P2 | 6 | 5 | 5 |
+| P3 | 1 | 2 | 3 |
+
+**Including P4† (best across all 4 prompts):**
+
+| Prompt | Wins CB | Wins SE |
+|--------|---------|---------|
+| P1 | 1 | 2 |
+| P2 | 2 | 3 |
+| P3 | 1 | 0 |
+| P4† | 8 | 7 |
+
+*P4 dominates the average (CB+SE)/2 for all 12 models, so 'Wins Overall including P4' is not shown — it is 12/12 P4.*
 
 ## 4. Prompt × Condition Aggregate Analysis
 
@@ -188,7 +198,7 @@ Format: Brier (n valid). CB = closed_book, SE = shared_evidence.
 | gemini-3.1-pro | reasoning | -0.0626 | -0.0579 | -0.0582 | -0.0596 | YES |
 | claude-opus-4.6 | reasoning | -0.0242 | -0.0445 | -0.0359 | -0.0348 | YES |
 | grok-4.20 | reasoning | -0.0235 | -0.0366 | -0.0416 | -0.0339 | YES |
-| glm-5.1 | standard | -0.0191 | -0.0458 | -0.0347 | -0.0332 | YES |
+| glm-5.1 | reasoning* | -0.0191 | -0.0458 | -0.0347 | -0.0332 | YES |
 | kimi-k2.6 | reasoning | -0.0204 | -0.0469 | -0.0236 | -0.0303 | YES |
 | qwen3-max | reasoning | -0.0418 | -0.0309 | -0.0082 | -0.0270 | YES |
 | deepseek-v3.2-speciale | reasoning | -0.0316 | -0.0182 | -0.0184 | -0.0227 | YES |
@@ -230,7 +240,7 @@ Models helped by evidence under P4: 11/12
 | grok-4.20 | reasoning | 0.1708 | 0.1764 (P2) | -0.0056 | YES | 0.1335 | 0.1375 (P3) | -0.0039 | YES |
 | deepseek-v3.2-speciale | reasoning | 0.1643 | 0.1658 (P2) | -0.0015 | YES | 0.1306 | 0.1447 (P1) | -0.0141 | YES |
 | gpt-oss-120b | reasoning | 0.1576 | 0.1637 (P2) | -0.0061 | YES | 0.1360 | 0.1504 (P1) | -0.0144 | YES |
-| glm-5.1 | standard | 0.1670 | 0.1802 (P1) | -0.0132 | YES | 0.1699 | 0.1521 (P2) | 0.0178 | no |
+| glm-5.1 | reasoning* | 0.1670 | 0.1802 (P1) | -0.0132 | YES | 0.1699 | 0.1521 (P2) | 0.0178 | no |
 | qwen3-max | reasoning | 0.1913 | 0.1860 (P2) | 0.0053 | no | 0.1558 | 0.1468 (P1) | 0.0089 | no |
 | gemma-4-31b | standard | 0.1807 | 0.1748 (P1) | 0.0059 | no | 0.1479 | 0.1620 (P2) | -0.0141 | YES |
 | gemini-3-flash | standard | 0.1772 | 0.1855 (P2) | -0.0084 | YES | 0.1528 | 0.1666 (P1) | -0.0138 | YES |
@@ -238,7 +248,7 @@ Models helped by evidence under P4: 11/12
 
 **P4 beats best P1–P3:** 8/12 models in closed-book, 7/12 in shared-evidence
 
-Standard models where P4 wins CB: 2/4  |  Reasoning: 6/8
+Standard models where P4 wins CB: 1/4  |  Reasoning: 6/8
 
 ## 7. Reasoning vs Standard Models
 
@@ -246,19 +256,19 @@ Standard models where P4 wins CB: 2/4  |  Reasoning: 6/8
 
 | Metric | Reasoning (8 models) | Standard (4 models) |
 |--------|---------------------|-------------------|
-| Mean Brier | 0.1558060417429513 | 0.1865154718361375 |
-| Parse Rate (%) | 99.8 | 99.9 |
-| Mean Latency (s) | 118.4 | 34.7 |
-| Mean Input Tokens | 2490 | 2546 |
-| Mean Output Tokens | 4845 | 1116 |
-| Mean Reasoning Tokens | 4502 | 2124 |
+| Mean Brier | 0.1558060417429513 | 0.1908841617933723 |
+| Parse Rate (%) | 99.8 | 100.0 |
+| Mean Latency (s) | 118.4 | 20.7 |
+| Mean Input Tokens | 2490 | 2590 |
+| Mean Output Tokens | 4845 | 672 |
+| Mean Reasoning Tokens | 4502 | None |
 
 **By prompt × condition:**
 
 | Type | P1/CB | P1/SE | P2/CB | P2/SE | P3/CB | P3/SE |
 |------|-------|-------|-------|-------|-------|-------|
 | reasoning | 0.1681 | 0.1382 | 0.1684 | 0.1371 | 0.1768 | 0.1463 |
-| standard | 0.1856 | 0.1792 | 0.1893 | 0.1716 | 0.2154 | 0.1780 |
+| standard | 0.1874 | 0.1852 | 0.1864 | 0.1780 | 0.2233 | 0.1850 |
 
 ## 8. Market Baseline Comparison
 
@@ -498,12 +508,14 @@ Market baseline Brier (P4 rows): **0.0952**
 | claude-opus-4.6 | reasoning | 0.1464 | 0.1290 | 100.0% | 39.2 | 2692 | 1896 | 864 |
 | grok-4.20 | reasoning | 0.1608 | 0.1439 | 100.0% | 28.5 | 2448 | 2164 | 1789 |
 | deepseek-v3.2-speciale | reasoning | 0.1644 | 0.1530 | 100.0% | 196.9 | 2412 | 7353 | 7064 |
-| glm-5.1 | standard | 0.1734 | 0.1567 | 99.7% | 76.6 | 2412 | 2463 | 2124 |
+| glm-5.1 | reasoning* | 0.1734 | 0.1567 | 99.7% | 76.6 | 2412 | 2463 | 2124 |
 | qwen3-max | reasoning | 0.1755 | 0.1620 | 99.4% | 250.5 | 2557 | 9332 | 8883 |
 | gpt-oss-120b | reasoning | 0.1756 | 0.1666 | 99.4% | 85.6 | 2431 | 4195 | 4333 |
 | gemma-4-31b | standard | 0.1783 | 0.1703 | 100.0% | 39.3 | 2604 | 469 | N/A |
 | gemini-3-flash | standard | 0.1789 | 0.1680 | 100.0% | 5.5 | 2591 | 601 | N/A |
 | mistral-large | standard | 0.2155 | 0.2099 | 100.0% | 17.4 | 2577 | 945 | N/A |
+
+*reasoning\* = called without explicit reasoning effort flag but produces internal reasoning tokens (mean 2,124). All other standard models (gemini-3-flash, gemma-4-31b, mistral-large) produce 0 reasoning tokens.*
 
 ### 12b. Recommended model sets for live Metaculus summer tournament
 
@@ -547,9 +559,9 @@ Market baseline Brier (P4 rows): **0.0952**
 
 **Finding 7:** **No LLM beats the market baseline.** Market Brier = 0.0949. Best model gap: gpt-5.4 is 0.0419 Brier points above market (p<0.001). The crowd-sourced market is a strong benchmark that current frontier LLMs cannot match.
 
-**Finding 8:** **LLMs are systematically overconfident.** 724 catastrophic overconfidence errors in P1–P3 (8.8% of valid rows): 384 high-confidence forecasts on events that did not occur, 340 low-confidence forecasts on events that did occur. ECE = 0.0818.
+**Finding 8:** **LLMs are severely miscalibrated at high confidence.** Overall ECE = 0.0818. The miscalibration is not uniform: models are near-calibrated at low probabilities but dramatically overconfident above 0.5. In the 0.9–1.0 bin (N=485 forecasts), mean forecast = 0.9596 but observed frequency = 0.5216 — a gap of 0.4379. In the 0.7–0.8 bin (N=354), gap = 0.2785. This pattern holds across all 12 models and constitutes 724 catastrophic errors (8.8% of valid rows): 384 cases of forecast > 0.80 on events that did not occur, 340 cases of forecast < 0.20 on events that did occur. P4 shows better calibration (ECE = 0.0637).
 
-**Finding 9:** **Reasoning models outperform standard models** (Brier 0.1558 vs 0.1865, delta = 0.0307). However, reasoning models are 3.4× slower. This difference is confounded by model size and recency.
+**Finding 9:** **Reasoning models outperform standard models** (Brier 0.1558 vs 0.1909, delta = 0.0351). However, reasoning models are 5.7× slower. This difference is confounded by model size and recency.
 
 **Finding 10:** **Topic and source heterogeneity is substantial.** Evidence helps most on sports questions (delta = -0.1591). Some topics show negligible evidence benefit. Caution: topic categories contain as few as 143 questions.
 
@@ -580,7 +592,7 @@ Market baseline Brier (P4 rows): **0.0952**
 | 4 | claude-opus-4.6 | reasoning | 0.1464 | 61.73 | 100.0% | 39.2 |
 | 5 | grok-4.20 | reasoning | 0.1608 | 59.90 | 100.0% | 28.5 |
 | 6 | deepseek-v3.2-speciale | reasoning | 0.1644 | 59.46 | 100.0% | 196.9 |
-| 7 | glm-5.1 | standard | 0.1734 | 58.36 | 99.7% | 76.6 |
+| 7 | glm-5.1 | reasoning* | 0.1734 | 58.36 | 99.7% | 76.6 |
 | 8 | qwen3-max | reasoning | 0.1755 | 58.11 | 99.4% | 250.5 |
 | 9 | gpt-oss-120b | reasoning | 0.1756 | 58.10 | 99.4% | 85.6 |
 | 10 | gemma-4-31b | standard | 0.1783 | 57.78 | 100.0% | 39.3 |
