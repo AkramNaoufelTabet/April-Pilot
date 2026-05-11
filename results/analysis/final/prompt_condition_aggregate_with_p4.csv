@@ -1,0 +1,9 @@
+prompt,condition,mean_brier,brier_index,n_valid,se_minus_cb_delta,market_brier_same_rows
+P1,closed_book,0.1740,58.29,1368,-0.0221,0.0949
+P1,shared_evidence,0.1518,61.03,1366,-0.0221,0.0950
+P2,closed_book,0.1754,58.12,1366,-0.0268,0.0949
+P2,shared_evidence,0.1486,61.46,1366,-0.0268,0.0950
+P3,closed_book,0.1897,56.45,1364,-0.0328,0.0949
+P3,shared_evidence,0.1569,60.39,1366,-0.0328,0.0950
+P4,closed_book,0.1653,59.34,1347,-0.0261,0.0945
+P4,shared_evidence,0.1392,62.69,1348,-0.0261,0.0958

@@ -1,0 +1,35 @@
+section,label,value
+integrity,P123_total,8208
+integrity,P123_valid,8196
+integrity,P123_parse_rate,99.9%
+integrity,P4_total,2736
+integrity,P4_valid,2695
+integrity,P4_parse_rate,98.5%
+leaderboard_p123,rank_1,gpt-5.4 brier=0.1367 BI=63.02
+leaderboard_p123,rank_2,gemini-3.1-pro brier=0.1432 BI=62.16
+leaderboard_p123,rank_3,kimi-k2.6 brier=0.1440 BI=62.05
+leaderboard_p123,rank_4,claude-opus-4.6 brier=0.1464 BI=61.73
+leaderboard_p123,rank_5,grok-4.20 brier=0.1608 BI=59.90
+leaderboard_p123,rank_6,deepseek-v3.2-speciale brier=0.1644 BI=59.46
+leaderboard_p123,rank_7,glm-5.1 brier=0.1734 BI=58.36
+leaderboard_p123,rank_8,qwen3-max brier=0.1755 BI=58.11
+leaderboard_p123,rank_9,gpt-oss-120b brier=0.1756 BI=58.10
+leaderboard_p123,rank_10,gemma-4-31b brier=0.1783 BI=57.78
+leaderboard_p123,rank_11,gemini-3-flash brier=0.1789 BI=57.70
+leaderboard_p123,rank_12,mistral-large brier=0.2155 BI=53.58
+market,market_brier_p123,0.0949
+market,n_models_beat_market_p123,0
+market,market_brier_p4,0.0952
+market,n_models_beat_market_p4,0
+pxc_delta,P1_se_minus_cb,-0.0221
+pxc_delta,P2_se_minus_cb,-0.0268
+pxc_delta,P3_se_minus_cb,-0.0328
+pxc_delta,P4_se_minus_cb,-0.0261
+calibration_p123,ECE,0.0818
+calibration_p123,mean_forecast,0.2849
+calibration_p123,overconf_total,724
+calibration_p4,ECE,0.0637
+type_comparison,reasoning_brier,0.1558
+type_comparison,standard_brier,0.1865
+type_comparison,reasoning_mean_lat,118.4
+type_comparison,standard_mean_lat,34.7
